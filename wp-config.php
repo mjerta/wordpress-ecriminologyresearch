@@ -21,22 +21,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'local-sites_ecriminologyresearch-wordpress' );
+define( 'DB_NAME', 'database2' );
 // define( 'DB_NAME', 'dbypms3ugp6syw' );
 // define( 'DB_NAME', 'dbbcae2j6pewgr' );
 
 /** MySQL database username */
-define( 'DB_USER', 'mjerta' ); 
+define( 'DB_USER', 'user2' ); 
 // define( 'DB_USER', 'uevfcvuzz9vd5' ); 
 // define( 'DB_USER', 'utb7pn9hz6wwf' ); 
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'zSWHh8487AMZwTi' );
+define( 'DB_PASSWORD', 'password2' );
 // define( 'DB_PASSWORD', '+[Itmg$4*@2[' );
 // define( 'DB_PASSWORD', '#6`3;%*11D_i' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'mariadb2' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );

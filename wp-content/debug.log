@@ -37,3 +37,45 @@
 [05-Aug-2023 21:32:25 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'action_wp_mail_failed' not found or invalid function name in J:\0to10design\local_sites\websites-local-use\ecriminologyresearch-wordpress\wordpress\wp-includes\class-wp-hook.php on line 287
 [06-Feb-2024 19:57:15 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'action_wp_mail_failed' not found or invalid function name in J:\0to10design\local_sites\websites-local-use\ecriminologyresearch-wordpress\wordpress\wp-includes\class-wp-hook.php on line 287
 [06-Feb-2024 19:57:37 UTC] PHP Notice:  Undefined index: remember in J:\0to10design\local_sites\websites-local-use\ecriminologyresearch-wordpress\wordpress\wp-content\themes\ecriminologyresearch\functions.php on line 94
+[07-Feb-2024 21:11:04 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:11:05 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:11:05 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:11:05 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:11:05 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:11:05 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:39 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:39 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:41 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:41 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:41 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:41 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:44 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:44 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:46 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:46 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:47 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:57 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:12:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:13:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:13:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:13:38 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:36 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:38 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:38 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:39 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:39 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:14:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:16:29 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:17:29 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635
+[07-Feb-2024 21:17:34 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /var/www/wordpress/wp-includes/wp-db.php on line 1635

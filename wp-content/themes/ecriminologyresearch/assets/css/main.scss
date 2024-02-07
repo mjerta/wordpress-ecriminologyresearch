@@ -1,0 +1,353 @@
+@import 'config';
+/*
+============================================================
+Mobile first approach
+
+    Legenda of styling
+    
+    1 - standard styling
+    2 - css grid layout
+    2.1 - header
+    2.2 - hero
+    2.3 - main
+    2.4 - footer
+
+============================================================
+*/
+
+/*
+============================================================
+1 - standard styling
+============================================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0,.7);
+}
+body {
+    margin: 0;
+    font-family: $font-stack;
+    background: bg-color(header);
+    overflow-x: hidden;
+}
+
+/*
+============================================================
+2 - css grid layout
+============================================================
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(17vh, auto) minmax(176px, 24vh) minmax(59vh, auto) auto;
+    grid-template-areas: 
+    "header"
+    "hero"
+    "main"
+    "footer";
+    overflow: hidden;
+}
+
+/*
+============================================================
+2.1 - header
+============================================================
+*/
+
+header {
+    grid-area: header;
+    position: relative;
+    background: bg-color(header);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: calc(max(81.6px, 10vh));
+    background: rgba(230, 235, 227,0.8);
+    z-index: -1;
+        li {
+            padding: $padding-large;
+        }
+
+        a {
+            color: txt-color(primary);
+            text-transform: uppercase;
+        }
+}
+
+.nav-links {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: bg-color(header);
+    list-style: none;
+    transition: transform 500ms ease-in-out;
+    transform: translateX(100%);
+
+    li {
+        opacity: 0;
+        
+    }
+
+    .sub {
+        display: none;
+    }
+}
+
+.dropdown {
+    display: none;
+}
+
+.nav-link-toggle {
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+
+@keyframes navLinkSlide {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinkSlideReverse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.burger {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100px;
+    cursor: pointer;
+    z-index: 999;
+
+    & div {
+        width: 35px;
+        height: 3px;
+        background: txt-color(optional1);
+        margin-right: 16px;
+        margin-bottom: 8px;
+        border-radius: 50px;
+    }
+}
+
+.line1, .line3 {
+    transition: transform 500ms ease-in-out;
+}
+
+.line2 {
+    transition: opacity 500ms ease-in-out 500ms;
+}
+
+.toggle {
+
+    .line1, .line3 {
+        transition: transform 530ms ease-in-out 900ms;
+    }
+
+    .line1 {
+        transform: rotate(-45deg) translate(-8px,7px);
+    }
+
+    .line2 {
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    .line3 {
+        transform: rotate(45deg) translate(-8px,-7px);
+    }
+}
+
+.logo-branding {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-top: calc(max(4vh, 40.95px));
+    transition: opacity 250ms ease-in-out 100ms;
+
+    figure {
+        margin-left: 2vw;
+        height: calc(max(106px, 13vh));
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    h2 {
+        color: txt-color(optional1);
+        font-weight: 500;
+        font-size: clamp(28px, 7.609vw, 3.431vh);
+    }
+}
+
+.logo-branding-toggle {
+    opacity: 0;
+}
+
+/*
+============================================================
+2.2 - hero
+============================================================
+*/
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-background {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: bg-color(hero-gradient-right);
+    clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hero-path-stroke {
+    fill: #aa9f401a;
+}
+
+/*
+============================================================
+2.3 - main
+============================================================
+*/
+main {
+    grid-area: main;
+    position: relative;
+    background: bg-color(main);
+}
+
+.main-background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(44% 0, 100% 0, 100% 100%, 0 100%, 0 33%);
+    background: bg-color(main-shape);
+}
+
+.line {
+    height: 3px;
+    background: txt-color(optional4);
+}
+
+/*
+============================================================
+2.4 - footer
+============================================================
+*/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: calc(max(50px, 6vh));
+    background: bg-color(footer);
+    text-align: center;
+    color: txt-color(optional4);
+
+    a {
+        color: txt-color(optional4);
+    }
+
+    ul {
+        list-style: none;
+        z-index: 999;
+        margin-bottom: 10px;
+    }
+
+   li:first-of-type {
+        font-size: clamp(16px, 4.348vw, 1.961vh);
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+   }
+
+   li {
+        margin-bottom: 10px;
+        font-size: clamp(16px, 4.348vw, 1.961vh);
+        text-transform: capitalize;
+   }
+}
+
+.footer-copyright {
+
+    margin-bottom: 0;
+
+    li:first-of-type {
+        font-size: calc(max(16px,1.961vh));
+        text-transform: capitalize;
+        margin: 0;
+    }
+
+    li {
+        margin: 0;
+        text-transform: none;
+    }
+}
+
+.footer-line {
+    height: calc(min(0.246vh, 2px));
+    width: 90%;
+    margin-bottom: 10px;
+    background: bg-color(line-color);
+    z-index: 999;
+
+}
+
+.footer-shape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: bg-color(footer-accent);
+    clip-path: polygon(100% 0, 25% 100%, 100% 100%);
+    z-index: 1;
+}
+
+@import 'utilities';
+@import 'tablet';
+@import 'laptop';

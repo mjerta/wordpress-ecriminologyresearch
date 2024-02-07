@@ -1,0 +1,167 @@
+    /*
+============================================================
+
+Laptop screen
+
+    Legenda of styling
+
+    ===================================
+    min width 769px
+
+        1 - css grid layout
+        1.1 - header
+        1.2 - main
+        1.4 - footer
+        
+    ===================================
+
+    ===================================
+    min width 1000px
+
+        2.2 - main
+
+    ===================================
+
+============================================================
+*/
+
+@media screen and (min-width: 769px) {
+
+    /*
+    ============================================================
+    1.1 - header
+    ===========================================================
+    */
+
+    .nav-links {
+        li {
+            ul.dropdown {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                width: 100%;
+                list-style: none;
+                z-index: -1;
+                transform: translateY(-100%);
+                transition: transform 250ms ease-in-out;
+
+                a {
+                    transition: unset;
+                    &:hover {
+                        background: bg-color(nav-hover);
+                    }
+                }
+
+                li:last-of-type {
+                    a::after {
+                        position: absolute;
+                        content: '';
+                        top: 100%;
+                        width: 100%;
+                        height: 50%;
+                        background: inherit;
+                        clip-path: polygon(0 0, 0 78%, 100% 0);
+                        transform: translateY(-100%);
+                        transition: transform 250ms ease-in-out;
+                    }
+                }
+            }
+            
+            &:hover , &:active {
+                ul.dropdown {
+                    transform: translateY(0);
+                    
+                    li:last-of-type {
+                        a::after {
+                            transform: translateY(0);
+                            transition: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page {
+        justify-content: center;
+    }
+        
+    /*
+    ============================================================
+    1.4 - footer
+    ===========================================================
+    */
+    
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    
+        ul {
+            padding: 0 6vh;
+            margin: 0;
+        }
+
+        .footer-copyright {
+            text-align: center;
+        }
+    }
+}
+    
+@media screen and (min-width: 1300px) {
+    
+    /*
+    ============================================================
+    2.2 - main
+    ===========================================================
+    */
+    
+    // articulo
+    .articulo-main {
+        aside {
+            display: unset;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            background: #F1DFDF;
+            z-index: 999;
+            
+            .inside-sidebar {
+                position: relative;
+                padding: 100px 20px 0px 20px;
+
+                svg {
+                    position: absolute;
+                    height: 100px;
+                    width: auto;
+                    left: -40px;
+                    top: 5px;
+                    cursor: pointer;
+                }
+    
+                input {
+                    padding: 10px;
+                    margin-bottom: 40px;
+                    border: 0.5;
+                }
+    
+                h2 {
+                    font-weight: 500;
+                    margin-bottom: 5px;    
+                    text-decoration: underline;            
+                }
+    
+                p {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .placement-text-sidebar {
+        margin-bottom: 40px;
+    }
+}

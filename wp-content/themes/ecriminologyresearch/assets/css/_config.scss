@@ -1,0 +1,100 @@
+/*
+======================================================================
+All Colors
+======================================================================
+*/
+
+$bg-colors: (
+    //header colors
+    header: #e6ebe3,
+    nav: #dce4d8,
+    nav-current: #c8d4c3,
+    nav-hover: #769756,
+    //hero colors
+    hero-gradient-left: #3b4c2b,
+    hero-gradient-right: #769756,
+    //main colors
+    main: #f2f2f2,
+    main-shape: #ece4e4,
+    offering: #dae9ee,
+    footer: #769756,
+    footer-accent: #7b9e59,
+    line-color: #fff,
+    line-color-resume: #000
+);
+
+@function bg-color($bg-color-name) {
+    @return map-get($bg-colors, $bg-color-name);
+}
+
+/*
+======================================================================
+All Fonts styles
+======================================================================
+*/
+
+$font-stack: "Quicksand", "Arial", sans-serif;
+
+// All text colors
+$txt-colors: (
+    primary: #000,
+    secondary: #fff,
+    optional1: #465a33,
+    optional2: #9ca72d,
+    optional3: #7c9c7e,
+    optional4: #e6ebe3,
+    optional5: #0e5001,
+);
+
+@function txt-color($txt-color-name) {
+    @return map-get($txt-colors, $txt-color-name);
+}
+
+//h1 - h6 tags
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+/*
+======================================================================
+Button colors and styling
+======================================================================
+*/
+
+$btn-colors: (
+    primary: #9ca72d,
+);
+
+@function btn-color($btn-color-name) {
+    @return map-get($btn-colors, $btn-color-name);
+}
+
+/*
+======================================================================
+Form and inputs
+======================================================================
+*/
+
+input,
+textarea {
+    font-family: $font-stack;
+}
+
+/*
+======================================================================
+All Padding and Margins
+======================================================================
+*/
+
+$padding-small: 16px;
+$padding-medium: 32px;
+$padding-large: 48px;

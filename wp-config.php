@@ -97,3 +97,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('FS_METHOD', 'direct');
+
+define('WP_HOME','https://wordpress-ecriminologyresearch.mpdev.nl');
+define('WP_SITEURL','https://wordpress-ecriminologyresearch.mpdev.nl');
